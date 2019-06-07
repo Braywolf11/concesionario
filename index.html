@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-    <link rel="stylesheet" href="style.css">
-    <script src="javascrip.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    
     <meta http-equiv="REFRESH" content="20; URL=index.html">
 </head>
 <body>
@@ -20,127 +22,186 @@
        data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand mx-auto" href="#">SA<span>IH</span></a>
+      <a class="navbar-brand mx-auto" href="index.html">zona<span>utomovil</span></a>
       <div class="collapse navbar-collapse" id="navbarCollapse1">
         <ul class="navbar-nav ml-auto">
          <li class="nav-item active"> <a class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>
         <li class="nav-item"> <a class="nav-link" href="#cars">Vehiculos</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#about">Ofertas</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#blog">Sing in</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#gallery">Sing up</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="perfil/login.php">Sing in</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="perfil.php">Sing up</a> </li>
         </ul>
       </div>
             </div>
     </nav>
+    
+        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="slime/logo_lambo.jpg" alt="lamborghini" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="slime/logo_bmw.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="slime/logo_ferrari.jpg" alt="New york" style="width:100%;">
+            </div>
 
-<!-- Swiper Silder
-    ================================================== --> 
-<!-- Slider main container -->
-<div class="swiper-container main-slider" id="myCarousel">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide slider-bg-position" style="background:url('slime/lamborghini-veneno.jpg')" data-hash="slide1">
-      <h2>It is health that is real wealth and not pieces of gold and silver</h2>
-    </div>
-    <div class="swiper-slide slider-bg-position" style="background:url('slime/lambor1.jpg')" data-hash="slide2">
-      <h2>Happiness is nothing more than good health and a bad memory</h2>
-    </div>
-  </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Add Navigation -->
-  <a class="left carousel-control" href=".mycarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Geri</span>
-  </a>
-  <a class="right carousel-control" href=".mycarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">İleri</span>
-  </a>
-</div>
-</div><br><br>
-<div class="container" id="cars">
-    <table border="0 " align="center">
-        <tr>
-            <td><img src="vehiculos/01.jpg" ></td>
-            <td><img src="vehiculos/02.jpg" ></td>
-            <td><img src="vehiculos/03.jpg" ></td>
-        </tr>
-        <tr>
-                <td><img src="vehiculos/04.jpg" ></td>
-                <td><img src="vehiculos/05.jpg" ></td>
-                <td><img src="vehiculos/06.jpg" ></td>
-        </tr>
-        <tr>
-                <td><img src="vehiculos/07.jpg" ></td>
-                <td><img src="vehiculos/08.jpg" ></td>
-                <td><img src="vehiculos/09.jpg" ></td>
-        </tr>
-        <tr>
-                <td><img src="vehiculos/10.jpg" ></td>
-                <td><img src="vehiculos/11.jpg" ></td>
-                <td><img src="vehiculos/12.jpg" ></td>
-        </tr>
-    </table>
-</div>
-<!-- Benefits
-    ================================================== -->
-<section class="service-sec" id="benefits">
-  <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="heading">
-      <h2><small>Benefits of Exercise</small>To enjoy the glow of good health, you must exercise</h2>
-    </div>
-        </div>
-      <div class="col-md-8">
-        <div class="row">
-            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-plus" aria-hidden="true"></i>
-          <h3>Better Sleep</h3>
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe.</p>
-        </div>
-        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-leaf" aria-hidden="true"></i>
-          <h3>Reduces Weight</h3>
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe.</p>
-        </div>
-        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-leaf" aria-hidden="true"></i>
-          <h3>Improves Mood</h3>
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe.</p>
-        </div>
-        <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-bell" aria-hidden="true"></i>
-          <h3>Boosts Energy</h3>
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe.</p>
-        </div>
-        </div>
-      </div>
-      <div class="col-md-4"> <img src="http://grafreez.com/wp-content/temp_demos/burnout/img/side-01.jpg" class="img-fluid" /> </div>
-    </div>
-    <!-- /.row --> 
-  </div>
-</section>
+            <div class="item">
+                <img src="slime/logo_mustang.jpg" alt="New york" style="width:100%;">
+            </div>
+            
+            <div class="item">
+                <img src="slime/logo_porsche.jpg" alt="New york" style="width:100%;"><a href=""></a>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        
+      </div><br><br>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons" id="cars">
+          <ul>
+            <li class="btn btn-light active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> 
+              <img src="vehiculos/lambor11.jpg" border-radius="100%">
+            </li>
+            <li class="btn btn-light">
+              <input type="radio" name="options" id="option2" autocomplete="off"> 
+                <img src="vehiculos/lambor2.jpg">
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option3" autocomplete="off" checked> 
+                <img src="vehiculos/lambor3.jpg" >
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option4" autocomplete="off"> 
+                  <img src="vehiculos/bmw1.jpg">
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option5" autocomplete="off" checked> 
+                <img src="vehiculos/bmw2.jpg" >
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option6" autocomplete="off"> 
+                <img src="vehiculos/bmw3.jpg">
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option7" autocomplete="off" checked> 
+                <img src="vehiculos/ferrari11.jpg" >
+            </li>
+            <li class="btn btn-light">
+            <input type="radio" name="options" id="option8" autocomplete="off"> 
+                <img src="vehiculos/ferrari2.jpg">
+            </li>
+            <li class="btn btn-light">
+              <input type="radio" name="options" id="option9" autocomplete="off" checked> 
+                <img src="vehiculos/ferrari3.jpg" >
+            </li>
+            <li class="btn btn-light">
+              <input type="radio" name="options" id="option10" autocomplete="off"> 
+                <img src="vehiculos/mustang1.jpg">
+            </li>
+            <li class="btn btn-light">
+              <input type="radio" name="options" id="option11" autocomplete="off" checked> 
+                  <img src="vehiculos/mustang2.jpg" >
+            </li>
+            <li class="btn btn-light">
+              <input type="radio" name="options" id="option12" autocomplete="off"> 
+                <img src="vehiculos/mustang3.jpg">
+            </li>
+            <li class="btn btn-light">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 
+                  <img src="vehiculos/porsche1.jpg">
+              </li>
+              <li class="btn btn-light">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> 
+                    <img src="vehiculos/porsche2.jpg" >
+              </li>
+              <li class="btn btn-light">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 
+                  <img src="vehiculos/porsche3.jpg">
+              </li>
+            </ul>
+          </div><br><br>
+          <div class="container" align="center">
+  
+              <h1>Ubicacion</h1>
 
-<!-- About 
-    ================================================== -->
-<section class="about-sec parallax-section" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <h2><small>Who We Are</small>About<br>
-          Our Blog</h2>
-      </div>
-      <div class="col-md-4">
-        <p>To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment, and all wisdom and virtue will naturally come to him.</p>
-        <p>Saving our planet, lifting people out of poverty, advancing economic growth... these are one and the same fight. We must connect the dots between climate change, water scarcity, energy shortages, global health, food security and women's empowerment. Solutions to one problem must be solutions for all.</p>
-      </div>
-      <div class="col-md-4">
-        <p>Our greatest happiness does not depend on the condition of life in which chance has placed us, but is always the result of a good conscience, good health, occupation, and freedom in all just pursuits.</p>
-        <p>Being in control of your life and having realistic expectations about your day-to-day challenges are the keys to stress management, which is perhaps the most important ingredient to living a happy, healthy and rewarding life.</p>
-        <p><a href="#" class="btn btn-transparent-white btn-capsul">Explore More</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.930048230276!2d-77.28067988502877!3d1.2090440991181313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed49b0d465fef%3A0xf43b9b932967a617!2sInstituci%C3%B3n+Universitaria+CESMAG!5e0!3m2!1ses-419!2sco!4v1559586789052!5m2!1ses-419!2sco" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          
+          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+          
+              <div class="container-fluid" id="bg3">
+                  <footer class="container ">
+                    <div class="row foot">
+                  
+                      <div id="foot1" class="col-md-3 col-sm-3">
+                  
+                        <h3>Contactenos</h3>
+                      <h5 id="firstchild">
+                        <span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Contact Us</b></a></h5>
+                      <h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>About Us</b></a></h5>
+                      <h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Terms & Conditions</b></a></h5>
+                      <h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Private Policy</b></a></h5>
+                      </div>
+                  
+                      <div id="foot2" class="col-md-3 col-sm-3">
+                        <h3>Politicas</h3>
+                  
+                        <h5 id="firstchild"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Customer Support</b></a></h5>
+                        <h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Cancelltion policy</b></a></h5>
+                        <h5><span class="glyphicon glyphicon-chevron-right"></span><a href="perfil.php" class="text-muted"><b> Register</b></a></h5>
+                        <h5 style="border-bottom:0px;"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b> Conatct Us</b></a></h5>
+                      </div>
+                  
+                      <div id="foot3" class="col-md-3 col-sm-3">
+                          <h3>Informacion</h3>
+                          <h4 class="text-muted">santa fe Carrera 3e # 19-46, Pasto - Nariño<br>Telfono: 317 709 60 84<br>Fax:7 20 20 23<br>E-mail: Brayfer1893@gmail.com</h4>
+                        </div>
+                  
+                  
+                        <div id="foot4" class="col-md-3 col-sm-3">
+                          <h3>Redes</h3><br>
+                            <ul class="social-network social-circle">
+                                <li><a href="https://es-la.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=es" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://co.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.tumblr.com/" class="icoTumblr" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
+                              
+                        </ul>	
+                        </div>   
+                        
+                  </div>
+                  </footer>
+                  </div>
+                  
+              <section class="container-fluid" id="foot5">
+                <h4 class="text-center text-muted">Copyrights © 2018 alphacars.com</h4>
+          </section>
 </body>
+<script src="js/javascrip.js"></script>
 </html>
 
 
