@@ -7,11 +7,13 @@
 
       if($result->num_rows > 0){
         while ($row = $result->fetch_assoc()) {
-          $idusu = $row['marca'];
-          $nomusu = $row['Nombre'];
-          $apellusu = $row['Apellidos'];
-          $epsusu = $row['eps'];
-          
+          $marca = $row['marca'];
+          $nomcar = $row['Nombre'];
+          $modelo = $row['modelo'];
+		  $color = $row['color'];
+		  $precio = $row['precio'];
+		  $ruta_foto = $row['photo'];
+		  $estado = $row['estado'];
         }
       }  
 ?><!DOCTYPE html>
@@ -29,56 +31,60 @@
 <body>
 <div class="container">
 	<div class="row">
-		<h2 class="text-danger">Approve User</h2>
-		
-		
+		<h2 class="text-danger">Aprovar vehiculo</h2>
 		<table class="table table-bordered success">
 				<thead>
+				<form action="/concesionario/perfil/admin/config/actualizacion/cambio.php" method="POST">
+				<input type="hidden" class="form-control" enable="ok" id="cod" maxlenght="8" name="idvehiculo" value=<?php echo $id;?>>
+
 					<tr >
-						<th >Full Name</th>
-						<td>Vikram</td>
+						<th >Marca</th>
+						
+						<td><select id="marca" name="marca" class="form-control" readonly="yes">
+							<option value="<?php echo $marca;?>"><?php echo $marca;?></option>
+							<option value="BMW"><b>BMW</b></option>
+							<option value="Audi"><b>Audi</b></option>
+							<option value="Chevrolet"><b>Chevrolet</b></option>
+							<option value="Dodge"><b>Dodge</b></option>
+							<option value="Ford"><b>Ford</b></option>
+							<option value="Jeep"><b>Jeep</b></option>
+							<option value="Mercedes-Benz"><b>Mercedes-Benz</b></option>
+							<option value="Mitsubishi"><b>Mitsubishi</b></option>
+							<option value="Porsche"><b>Porsche</b></option>
+							<option value="Volkswagen"><b>Volkswagen</b></option>
+							<option value="Toyota"><b>Toyota</b></option>
+							<option value="Subaru"><b>Subaru</b></option>
+							<option value="Lamborghini"><b>Lamborghini</b></option>
+							<option value="Ferrari"><b>Ferrari</b></option>
+						</select></td>
 					</tr>
 					<tr>
-						<th class="info">Address</th>
-						<td>India maharashtra Pune</td>
+						<th class="info">Nombre</th>
+						<td><input type="text" class="form-control" id="prod" name="Nombre" maxlenght="20" value=<?php echo $nomcar;?>></td>
 					</tr>
 					<tr>
-						<th class="info">Email</th>
-						<td>lorem@mail.com</td>
+						<th class="info">Modelo</th>
+						<td><input type="textr" class="form-control mb-2 mr-sm-2" id="cant" name="Modelo" value=<?php echo $modelo;?> required></td>
 					</tr>
 					<tr>
-						<th class="info">Contact</th>
-						<td>+91 9999955555</td>
+						<th class="info">Color</th>
+						<td><input type="text" class="form-control mb-2 mr-sm-2" id="pcosto" name="color" autocomplete="off" value=<?php echo $color;?> required></td>
 					</tr>
 					
 					<tr>
-						<th class="info">State</th>
-						<td>Maharashtra</td>
+						<th class="info">Precio</th>
+						<td><input type="text" class="form-control mb-2 mr-sm-2" id="pcosto" name="precio" autocomplete="off" value=<?php echo $precio;?> required></td>
 					</tr>
 					<tr>
-						<th class="info">City</th>
-						<td>Pune</td>
+						<th class="info">Ruta Foto</th>
+						
+						<td><input type="file" class="form-control" id="foto" name="foto" value="Examinar" ></td>
 					</tr>
-					<tr >
-						<th  class="info">Service List</th>
-						<td>Service 1 , Service 2 , Serive 3</td>
-					</tr>
+								
 					<tr>
-						<th valign="top" class="info">Machine</th>
-						<td>Machine1 , Machine2 , Machine3</td>
-					</tr>
-					<tr>
-						<th class="info">Brand</th>
-						<td>Audi</td>
-					</tr>
-					<tr>
-						<th class="info">Specialization</th>
-						<td>Lorem Ipsum that is dollor sign to write</td>
-					</tr>
-
-					<tr>
-						<th class="info">Approval Status</th>
-						<td><b>Active</b></td>
+						<th class="info">Status</th>
+						<td><b><input type="text" class="form-control mb-2 mr-sm-2" id="pcosto" name="estado" autocomplete="off" value=<?php echo $estado;?> readonly="yes"></b></td>
+						
 					</tr>
 				
 					<tr>
@@ -91,9 +97,9 @@
 					</tr>
 					<tr>
 							
-						<form >
+						
 							
-						<th class="info">Action To Approval</th>
+						<th class="info">Action</th>
 						<td><select id="approv_status" name="approv_status" class="form-control">
 							<option value="">Select</option>
 							<option value="active"><b>Active</b></option>
@@ -104,10 +110,8 @@
 					<tr >
 						<th colspan="1"></th>
 						<td>
-							<input type="hidden" name="hidden_id" id="hidden_id" value="<?php echo $value->id; ?>">
-							<input type="hidden" name="folder_name" id="folder_name"  value="<?php echo $value->email; ?>" >
-							<a href="" class="btn btn-warning">Back</a>
-							<input type="button" id="approve_btn" class="btn btn-info" name="approve_btn" value="Approve"></td>
+							<a href="/concesionario/perfil/admin/config/conf_vehiculo.php" class="btn btn-warning">Back</a>
+							<input type="submit" id="approve_btn" class="btn btn-info" name="approve_btn" value="Approve"></td>
 						</form>
 					</tr>
 				</thead>

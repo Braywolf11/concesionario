@@ -58,7 +58,9 @@
                                 echo "<td>".$row['precio']."</td>";
                                 echo "<td>".$row['estado']."</td>";
                                 echo "<td><div align='center' ><a href='photos.php'><img src = '/concesionario/icons/eye.png' width='30'></a></div></td>";
-                                echo "<td><div align='center' ><a href='/concesionario/perfil/admin/config/update.php'><img src = '/concesionario/icons/edit.png' width='30'></a></div></td>";
+                                echo "<td><div align='center' ><a href='/concesionario/perfil/admin/config/update.php?id=".$row['id']."&marca=".$row['marca']."&Nombre="
+                                .$row['Nombre']."&modelo=".$row['modelo']."&color=".$row['color']."&precio=".$row['precio']."&photo=".$row['photo']."&estado=".$row['estado']."'>
+                                <img src = '/concesionario/icons/edit.png' width='30'></a></div></td>";
                                 echo "<td><div align='center' ><a href = 'imprimir.php'><img src = '/concesionario/icons/delete.png' width='30'></a></div></td>";
                             echo "</tr>";
                         }
