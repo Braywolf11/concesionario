@@ -23,7 +23,7 @@ $result = $conn->query($sql);
         session_start();
         $_SESSION['users']=$row['Username_perfil'];
         echo "<script languaje='javascript'>alert('Bienvenido Usuario')</script> ";
-        header ("refresh:0; url=/concesionario/perfil/admin/usuarios.php");
+        header ("refresh:0; url=/concesionario/perfil/user/users.php");
     }elseif ($row['perfil']==3) {
         session_start();
         $_SESSION['users']=$row['Username_perfil'];

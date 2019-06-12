@@ -15,17 +15,15 @@
 <body>
 <div class="log">
 <nav class="mb-4 navbar navbar-expand-lg navbar-dark ">
-                <a class="navbar-brand font-bold" href="#">ZONAUTOMOVIL</a>
+                <a class="navbar-brand font-bold" href="/concesionario/index.html">ZONAUTOMOVIL</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact <span class="sr-only">(current)</span></a>
-                        </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-gear"></i> Settings</a>
+                            <a class="nav-link" href="/concesionario/perfil/admin/logout.php"><i class="fa fa-gear"></i> cerrar sesion</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> <?php  include("database.php");
@@ -40,7 +38,7 @@
 
 <article>
   <div class="item-wrapper">
-  <a href="/concesionario/perfil/admin/config/conf_vehiculo.php" >
+  <a href="/concesionario/perfil/admin/vehiculos/conf_vehiculo.php" >
   <figure>
       <div class="image" style="background-image:url(/concesionario/images/vehiculo.jpg);" ></div>
       <div class="lighting"></div>
@@ -55,7 +53,7 @@
 </article>
 <article>
   <div class="item-wrapper">
-  <a href="/concesionario/perfil/admin/config/conf_vehiculo.php" >
+  <a href="/concesionario/perfil/admin/Usuarios/conf_users.php" >
     <figure>
       <div class="image" style="background-image:url(/concesionario/images/usuarios.jpg);" ></div>
       <div class="lighting"></div>

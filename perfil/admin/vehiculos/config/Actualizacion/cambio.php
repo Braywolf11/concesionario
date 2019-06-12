@@ -49,10 +49,10 @@
         }
     }
 	
-	/*
+	
 	echo "<script language='javascript'>alert('Archivo actualizado con exito')</script>";
-    header("Refresh:0;url=index.php");
-    */
+    header("Refresh:0;url=/concesionario/perfil/admin/vehiculos/config/conf_vehiculos.php");
+    
     
     
 

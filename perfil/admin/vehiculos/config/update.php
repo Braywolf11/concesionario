@@ -34,7 +34,7 @@
 		<h2 class="text-danger">Aprovar vehiculo</h2>
 		<table class="table table-bordered success">
 				<thead>
-				<form action="/concesionario/perfil/admin/config/actualizacion/cambio.php" method="POST">
+				<form action="/concesionario/perfil/admin/vehiculos/config/actualizacion/cambio.php" method="POST">
 				<input type="hidden" class="form-control" enable="ok" id="cod" maxlenght="8" name="idvehiculo" value=<?php echo $id;?>>
 
 					<tr >
@@ -110,7 +110,7 @@
 					<tr >
 						<th colspan="1"></th>
 						<td>
-							<a href="/concesionario/perfil/admin/config/conf_vehiculo.php" class="btn btn-warning">Back</a>
+							<a href="/concesionario/perfil/admin/vehiculos/conf_vehiculo.php" class="btn btn-warning">Back</a>
 							<input type="submit" id="approve_btn" class="btn btn-info" name="approve_btn" value="Approve"></td>
 						</form>
 					</tr>
